@@ -5,7 +5,22 @@ import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { opacity, slideUp } from './animation';
 
-const words = ["Hello", "Bonjour", "Ciao", "Olà", "やあ", "Hallå", "Guten tag", "Hallo"]
+const words = [
+    "Hello",         // English
+    "नमस्ते",        // Hindi
+    "வணக்கம்",       // Tamil
+    "నమస్తే",        // Telugu
+    "ನಮಸ್ಕಾರ",       // Kannada
+    "નમસ્તે",        // Gujarati
+    "ਸਤ ਸ੍ਰੀ ਅਕਾਲ",   // Punjabi
+    "নমস্কাৰ",        // Assamese
+    "ନମସ୍କାର",        // Odia
+    "নমস্তে",         // Bengali
+    "سلام",           // Urdu
+    "ഹലോ",           // Malayalam
+    "नमस्कार"        // Marathi / Sanskrit
+  ]
+  
 
 export default function Index() {
     const [index, setIndex] = useState(0);
